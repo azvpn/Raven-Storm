@@ -1,9 +1,9 @@
 # 2020
-# The Raven-Storm Toolkit was programmed and developed by Taguar258.
-# The Raven-Storm Toolkit is published under the MIT Licence.
-# The Raven-Storm Toolkit is based on the CLIF-Framework.
-# The CLIF-Framework is programmed and developed by Taguar258.
-# The CLIF-Framework is published under the MIT Licence.
+# Bộ công cụ Raven-Storm được lập trình và phát triển bởi Taguar258.
+# Bộ công cụ Raven-Storm được xuất bản theo Giấy phép MIT.
+# Bộ công cụ Raven-Storm dựa trên CLIF-Framework.
+# CLIF-Framework được lập trình và phát triển bởi Taguar258.
+# CLIF-Framework được xuất bản theo Giấy phép MIT.
 
 from os import chdir, path, system
 from random import choice
@@ -91,12 +91,12 @@ C_FIRE (
 |   // _` |\\ V / / -_)| ' \\)) (_-<|  _|/ _ \\| '_|| '  \\C_FIRE()C_BOT
 |_|_\\\\__,_| \\_/  \\___||_||_|  /__/ \\__|\\___/|_|  |_|_|_|C_W
 
-C_BoStress-Testing-Toolkit by Taguar258 (c) | MIT 2020
-Based on the CLIF Framework by Taguar258 (c) | MIT 2020C_W
+C_BoS Stress-Testing-Toolkit của Taguar258 (c) | MIT 2020
+Dịch bởi Đậu Đậu | Dựa trên Khung CLIF của Taguar258 (c) | MIT 2020C_W
 
-BY USING THIS SOFTWARE, YOU MUST AGREE TO TAKE FULL RESPONSIBILITY
-FOR ANY DAMAGE CAUSED BY RAVEN-STORM.
-RAVEN-STORM SHOULD NOT SUGGEST PEOPLE TO PERFORM ILLEGAL ACTIVITIES.
+BẰNG CÁCH SỬ DỤNG PHẦN MỀM NÀY, BẠN PHẢI ĐỒNG Ý CHỊU TRÁCH NHIỆM ĐẦY ĐỦ
+ĐỐI VỚI BẤT KỲ THIỆT HẠI NÀO DO RAVEN-STORM gây ra.
+RAVEN-STORM KHÔNG NÊN ĐỀ XUẤT NHỮNG NGƯỜI THỰC HIỆN CÁC HOẠT ĐỘNG BẤT HỢP PHÁP.
 C_Bo-----------------------------------------------------------C_W""")
 		banner_logo = banner_logo.replace("C_W", var.C_None)
 		banner_logo = banner_logo.replace("C_Bo", var.C_Bold)
@@ -114,11 +114,11 @@ C_Bo-----------------------------------------------------------C_W""")
 	@event.event
 	def on_command_not_found(command):
 		print("")
-		print("The command you entered does not exist.")
+		print("Lệnh bạn đã nhập không tồn tại.")
 		print("")
 
 	def exit_console(self):
-		print("Have a nice day.")
+		print("Chúc một ngày tốt lành.")
 		quit()
 
 	@event.event
@@ -129,7 +129,7 @@ C_Bo-----------------------------------------------------------C_W""")
 			status = requests.post((var.server[2] + "set/com"), data={"password": var.server[3], "data": command}).text
 			if status != "200":
 				print("")
-				print("An error occured, while sending commands to the server.")
+				print("Đã xảy ra lỗi khi gửi lệnh tới máy chủ.")
 				print("")
 
 	def _add_commands(self):
@@ -270,26 +270,26 @@ C_Bo-----------------------------------------------------------C_W""")
 	def ddos(self):
 		print("")
 		try:
-			ddos_host = input("Enter Host URL of the server: ")
-			ddos_password = input("Enter the password: ")
+			ddos_host = input("Nhập URL máy chủ của máy chủ: ")
+			ddos_password = input("Nhập mật khẩu: ")
 			if "http" not in ddos_host:
-				raise Exception("Wrong Host URL.")
+				raise Exception("URL máy chủ lưu trữ sai.")
 			if "/" != ddos_host[-1]:
 				ddos_host += "/"
 			test_data = {"password": ddos_password}
 			agreed = requests.post((ddos_host + "get/agreed"), data=test_data).text
 			if agreed != "False":
-				raise Exception("Wrong data was given.")
-			ddos_role = tools.question("Do you want this to be used as a host?")
+				raise Exception("Dữ liệu sai đã được cung cấp.")
+			ddos_role = tools.question("Bạn có muốn cái này được sử dụng như một máy chủ lưu trữ?")
 			status = requests.post((ddos_host + "reset"), data=test_data).text
 			if status != "200":
-				print("Something strange happened.")
+				print("Một vài chuyện lạ đã xảy ra.")
 			var.server[1] = ddos_role
 			var.server[2] = ddos_host
 			var.server[3] = ddos_password
 			var.server[0] = True
 		except Exception as ex:
-			print("An exception occured.", ex)
+			print("Một ngoại lệ đã xảy ra.", ex)
 		print("")
 
 	@event.command
@@ -337,22 +337,22 @@ C_Bo-----------------------------------------------------------C_W""")
 				var.session[1][0] = True
 				print("Repeating actions...")
 		except Exception as ex:
-			print("An error occured.", ex)
+			print("Đã xảy ra lỗi.", ex)
 		print("")
 
 	@event.command
 	def upgrade():
 		try:
 			chdir("/tmp")
-			system("sudo git clone https://github.com/Taguar258/Raven-Storm.git")
+			system("sudo git clone https://github.com/DauDau432/Raven-Storm.git")
 			chdir("/tmp/Raven-Storm/")
 			system("sudo bash ./install_to_bin.sh")
-			print("[i] Deleting the temporary stored Raven-Storm...")
+			print("[i] Xóa Raven-Storm được lưu trữ tạm thời...")
 			system("sudo rm -rf -i /tmp/Raven-Storm/")
 			var.stop()
 			quit()
 		except Exception:
-			print("Cound not upgrade Raven-Storm. (Make sure to use sudo)")
+			print("Không thể nâng cấp Raven-Storm. (Đảm bảo sử dụng sudo)")
 
 	@event.command
 	def clear():
