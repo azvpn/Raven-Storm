@@ -1,22 +1,22 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: Issue name
-method: L4, L3, ...
+tên: Báo cáo lỗi
+về: Tạo báo cáo để giúp chúng tôi cải thiện
+title: Tên vấn đề
+phương pháp: L4, L3, ...
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Mô tả lỗi**
+Mô tả rõ ràng và ngắn gọn về lỗi là gì.
 
-**To Reproduce**
-Steps to reproduce the behavior:
+**Để tái tạo**
+Các bước để tái tạo hành vi:
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Hành vi mong đợi**
+Mô tả rõ ràng và ngắn gọn về những gì bạn mong đợi sẽ xảy ra.
 
-**OS:**
+**Hệ điều hành:**
 Linux, Windows, OSX
 
-**Additional context**
-Add any other context about the problem here.
+**Bối cảnh bổ sung**
+Thêm bất kỳ bối cảnh nào khác về vấn đề ở đây.
