@@ -1,7 +1,7 @@
 ---
 tên: Báo cáo lỗi
 về: Tạo báo cáo để giúp chúng tôi cải thiện
-title: Tên vấn đề
+Tiêu đề: Tên vấn đề
 phương pháp: L4, L3, ...
 
 ---
