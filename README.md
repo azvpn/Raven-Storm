@@ -6,11 +6,11 @@
 
 Gỡ bỏ các điểm truy cập WiFi, thiết bị trong mạng, máy chủ, dịch vụ và thiết bị Bluetooth của bạn một cách dễ dàng.
 
-Raven (viết tắt) mong muốn giúp bạn ** kiểm tra, hiểu và học hỏi từ các cuộc tấn công ** kiểm tra căng thẳng.
+Raven (viết tắt) mong muốn giúp bạn **kiểm tra, hiểu và học hỏi từ các cuộc tấn công** kiểm tra căng thẳng.
 
-Raven có thể ** đối phó với các máy chủ mạnh ** và ** có thể được tối ưu hóa ** cho các mục tiêu không điển hình.
+Raven có thể **đối phó với các máy chủ mạnh** và **có thể được tối ưu hóa** cho các mục tiêu không điển hình.
 
-Raven sẽ phù hợp với mục đích của bạn, ngay cả khi nó ** làm nhiễu mạng wifi hoặc thiết bị bluetooth **.
+Raven sẽ phù hợp với mục đích của bạn, ngay cả khi nó **làm nhiễu mạng wifi hoặc thiết bị bluetooth**.
 
 _Tôi đã lưu trữ kho lưu trữ này vì tôi hiện không muốn làm việc trên đó._
 
