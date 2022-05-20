@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "[i] We will now uninstall Raven-Storm..."
-echo "[i] This will delete all backups."
+echo "[i] Bây giờ chúng tôi sẽ gỡ cài đặt Raven-Storm..."
+echo "[i] Thao tác này sẽ xóa tất cả các bản sao lưu."
 sudo rm -i /usr/bin/rst
 sudo rm -rf -i /usr/share/Raven-Storm
 
-echo "[i] Raven-Storm sucessfully uninstalled."
+echo "[i] Đã gỡ cài đặt thành công Raven-Storm."
 exit 0
