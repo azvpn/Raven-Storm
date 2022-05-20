@@ -296,9 +296,9 @@ C_Bo-----------------------------------------------------------C_W""")
 	def record(command):
 		print("")
 		try:
-			to_file = tools.arg("Save to file: ", "record ", command)
+			to_file = tools.arg("Lưu vào tệp: ", "record ", command)
 			if path.isfile(to_file):
-				raise Exception("File already exists.")
+				raise Exception("Tập tin đã tồn tại.")
 			else:
 				new_file = open(to_file, "w")
 				# new_file.write("# -- Session File")
@@ -306,7 +306,7 @@ C_Bo-----------------------------------------------------------C_W""")
 				var.session[0][1] = open(to_file, "a")
 				var.session[0][0] = True
 				print("")
-				print("Recording...")
+				print("Ghi âm...")
 		except Exception as ex:
 			print("An error occured.", ex)
 		print("")
@@ -315,9 +315,9 @@ C_Bo-----------------------------------------------------------C_W""")
 	def load(command):
 		print("")
 		try:
-			from_file = tools.arg("Load from file: ", "load ", command)
+			from_file = tools.arg("Tải từ tệp: ", "load ", command)
 			if not path.isfile(from_file):
-				raise Exception("File does not exist.")
+				raise Exception("Tập tin không tồn tại.")
 			else:
 				new_list = []
 				command_list = []
