@@ -308,7 +308,7 @@ C_Bo-----------------------------------------------------------C_W""")
 				print("")
 				print("Ghi âm...")
 		except Exception as ex:
-			print("An error occured.", ex)
+			print("Đã xảy ra lỗi.", ex)
 		print("")
 
 	@event.command
@@ -335,7 +335,7 @@ C_Bo-----------------------------------------------------------C_W""")
 				command_list.append(new_list)
 				var.session[1][1] = command_list
 				var.session[1][0] = True
-				print("Repeating actions...")
+				print("Hành động lặp lại...")
 		except Exception as ex:
 			print("Đã xảy ra lỗi.", ex)
 		print("")
