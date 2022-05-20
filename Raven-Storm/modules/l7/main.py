@@ -158,12 +158,12 @@ C_B----------------------------------------------------------C_W""").replace("C_
 
 	def show_values(self):
 		print("")
-		print("Targets: %s" % var.target)
-		print("Threads: %s" % var.threads)
-		print("Delay between threads: %s" % var.sleep)
-		print("Delay between packets: %s" % var.interval)
+		print("Targets (Mục tiêu): %s" % var.target)
+		print("Threads (Chủ đề): %s" % var.threads)
+		print("Độ trễ giữa các chuỗi: %s" % var.sleep)
+		print("Độ trễ giữa các gói: %s" % var.interval)
 		if len(var.user_agents) == 1:
-			print("User Agent: %s" % var.user_agents[0])
+			print("Đại lý người dùng: %s" % var.user_agents[0])
 		print("")
 
 	def help(self):
@@ -316,7 +316,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 				else:
 					sleep(1)
 		elif not tools.question("\nBạn có đồng ý với các điều khoản sử dụng không?"):
-			print("Agreement not accepted.")
+			print("Thỏa thuận không được chấp nhận.")
 			quit()
 		else:
 			if var.server[0] and var.server[1]:
