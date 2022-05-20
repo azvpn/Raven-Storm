@@ -32,16 +32,16 @@ Chỉ cần nhập dòng sau để cài đặt Raven-Storm trên Linux.
 curl -s https://raw.githubusercontent.com/Taguar258/Raven-Storm/master/install.sh | sudo bash -s
 ```
 
-<a style="color: grey" href="https://taguar258.github.io/Raven-Storm/INSTALLATION"><b>Click here for the more detailed installation guide.</b></a>
+<a style="color: grey" href="https://taguar258.github.io/Raven-Storm/INSTALLATION"><b>Bấm vào đây để xem hướng dẫn cài đặt chi tiết hơn.</b></a>
 
 
-<a style="color: grey" href="https://github.com/Taguar258/Raven-Storm/blob/master/README.md#info-and-warning"><b>Terms of Use</b></a>
+<a style="color: grey" href="https://github.com/Taguar258/Raven-Storm/blob/master/README.md#info-and-warning"><b>Điều khoản sử dụng</b></a>
 
-<a style="color: grey" href="https://github.com/Taguar258/Raven-Storm/blob/master/LICENSE">Licence</a>
+<a style="color: grey" href="https://github.com/Taguar258/Raven-Storm/blob/master/LICENSE">Giấy phép</a>
 
-<a style="color: grey" href="https://github.com/Taguar258/Raven-Storm/projects/1">Project status/ToDo</a>
+<a style="color: grey" href="https://github.com/Taguar258/Raven-Storm/projects/1">Trạng thái dự án / Việc cần làm</a>
 
-<a style="color: grey" href="https://github.com/Taguar258/CLIF/">CLIF Framework</a>
+<a style="color: grey" href="https://github.com/Taguar258/CLIF/">Khung CLIF</a>
 
 ## Mô-đun nào để sử dụng
 
@@ -98,5 +98,5 @@ TRÁCH NHIỆM TRÁCH NHIỆM PHÁP LÝ ĐỐI VỚI MỘT HÀNH VI HỢP ĐỒN
 NGOÀI HOẶC KẾT NỐI VỚI PHẦN MỀM HOẶC VIỆC SỬ DỤNG HOẶC KINH DOANH KHÁC TRONG
 PHẦN MỀM.__
 
-**MIT Taguar258 2020**
+### Nguồn [**MIT Taguar258 2020**](https://github.com/Taguar258/Raven-Storm/)
 
