@@ -56,15 +56,15 @@ class Main:
 		event.commands(self.run_shell, ".")
 		event.commands(self.debug, "$")
 
-		event.help(["values", "ls"], "Show all options.")
+		event.help(["values", "ls"], "Hiển thị tất cả các tùy chọn.")
 
-		event.help("target", "Set the target.")
-		event.help("targets", "Set multiple targets.")
-		event.help("threads", "Amount of threads to use.")
-		event.help("sleep", "Delay between threads.")
-		event.help("interval", "Delay between each packet send.")
-		event.help("agent", "Define a user agent instead of a random ones.")
-		event.help("run", "Run the stress test.")
+		event.help("target", "Đặt mục tiêu.")
+		event.help("targets", "Đặt nhiều mục tiêu.")
+		event.help("threads", "Số lượng chủ đề sẽ sử dụng.")
+		event.help("sleep", "Độ trễ giữa các chuỗi.")
+		event.help("interval", "Độ trễ giữa mỗi lần gửi gói.")
+		event.help("agent", "Xác định một tác nhân người dùng thay vì một tác nhân ngẫu nhiên.")
+		event.help("run", "Chạy bài kiểm tra căng thẳng.")
 
 	def banner(self):
 		system("clear || cls")
