@@ -29,7 +29,7 @@ _Tôi đã lưu trữ kho lưu trữ này vì tôi hiện không muốn làm vi�
 Chỉ cần nhập dòng sau để cài đặt Raven-Storm trên Linux.
 
 ```bash
-curl -s https://raw.githubusercontent.com/Taguar258/Raven-Storm/master/install.sh | sudo bash -s
+curl -s https://raw.githubusercontent.com/DauDau432/Raven-Storm/master/install.sh | sudo bash -s
 ```
 
 <a style="color: grey" href="https://taguar258.github.io/Raven-Storm/INSTALLATION"><b>Bấm vào đây để xem hướng dẫn cài đặt chi tiết hơn.</b></a>
