@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 # 2020
-# The Raven-Storm Toolkit was programmed and developed by Taguar258.
-# The Raven-Storm Toolkit is published under the MIT Licence.
-# The Raven-Storm Toolkit is based on the CLIF-Framework.
-# The CLIF-Framework is programmed and developed by Taguar258.
-# The CLIF-Framework is published under the MIT Licence.
+# Bộ công cụ Raven-Storm được lập trình và phát triển bởi Taguar258.
+# Bộ công cụ Raven-Storm được xuất bản theo Giấy phép MIT.
+# Bộ công cụ Raven-Storm dựa trên CLIF-Framework.
+# CLIF-Framework được lập trình và phát triển bởi Taguar258.
+# CLIF-Framework được xuất bản theo Giấy phép MIT.
 
-# This script is a shortcut for everyone who does not want to install Raven-Storm to the bin path.
+# Tập lệnh này là một lối tắt cho tất cả những ai không muốn cài đặt Raven-Storm vào đường dẫn bin.
 
 from importlib import import_module
 from sys import path
