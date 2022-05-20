@@ -1,9 +1,9 @@
 # 2020
-# The Raven-Storm Toolkit was programmed and developed by Taguar258.
-# The Raven-Storm Toolkit is published under the MIT Licence.
-# The Raven-Storm Toolkit is based on the CLIF-Framework.
-# The CLIF-Framework is programmed and developed by Taguar258.
-# The CLIF-Framework is published under the MIT Licence.
+# Bộ công cụ Raven-Storm được lập trình và phát triển bởi Taguar258.
+# Bộ công cụ Raven-Storm được xuất bản theo Giấy phép MIT.
+# Bộ công cụ Raven-Storm dựa trên CLIF-Framework.
+# CLIF-Framework được lập trình và phát triển bởi Taguar258.
+# CLIF-Framework được xuất bản theo Giấy phép MIT.
 
 import socket
 from os import getcwd, name, path, system
@@ -69,61 +69,61 @@ class Main:
 
 		event.commands(self.show_values, ["values", "ls"])
 
-		event.help_comment("|\n|-- Main commands:")
-		event.help("port", "Set the target's port.")
-		event.help("threads", "Set the number of threads.")
-		event.help("ip", "Set the target's IP.")
-		event.help("web", "Target the ip of a domain.")
-		event.help("method", "Change attack method between UPD, TCP.")
-		event.help("sleep", "Set the time delay between each packet send.")
-		event.help("outtxt", "Output each packets send status: enable/disable.")
-		event.help("mute", "Do not output the connection reply.")
-		event.help(["values", "ls"], "Show all selected options.")
-		event.help("run", "Start the attack.")
-		event.help_comment("|\n|-- Set Send-text:")
-		event.help("message", "Set the packt's message.")
-		event.help("repeat", "Repeat the target's message specific times.")
-		event.help("mb", "Send specified amount of MB packtes to server.")
-		event.help("get", "Define the GET Header.")
-		event.help("agent", "Define a user agent instead of a random ones.")
-		event.help_comment("|\n|-- Stress Testing:")
-		event.help("stress", "Enable the Stress-testing mode.")
-		event.help("st wait", "Set the time between each stress level.")
-		event.help_comment("|\n|-- Multiple:")
-		event.help("ips", "Set multple ips to target.")
-		event.help("webs", "Set multple domains to target.")
-		event.help("ports", "Attack multiple ports.")
-		event.help_comment("|\n|-- Automation:")
-		event.help("auto start", "Set the delay before the attack should start.")
-		event.help("auto step", "Set the delay between the next thread to activate.")
-		event.help("auto stop", "Set the delay after the attack should stop.")
+		event.help_comment("|\n|-- Các lệnh chính:")
+		event.help("port", "Đặt cổng của mục tiêu.")
+		event.help("threads", "Đặt số lượng chủ đề.")
+		event.help("ip", "Đặt IP của mục tiêu.")
+		event.help("web", "Nhắm mục tiêu ip của một miền.")
+		event.help("method", "Thay đổi phương thức tấn công giữa UDP, TCP.")
+		event.help("sleep", "Đặt thời gian trễ giữa mỗi lần gửi gói.")
+		event.help("outtxt", "Xuất từng gói tin trạng thái gửi: bật / tắt.")
+		event.help("mute", "Không xuất ra câu trả lời kết nối.")
+		event.help(["values", "ls"], "Hiển thị tất cả các tùy chọn đã chọn.")
+		event.help("run", "Bắt đầu cuộc tấn công.")
+		event.help_comment("|\n|-- Đặt văn bản gửi:")
+		event.help("message", "Đặt thông điệp của packt.")
+		event.help("repeat", "Lặp lại thông điệp của mục tiêu thời gian cụ thể.")
+		event.help("mb", "Gửi số lượng gói MB cụ thể đến máy chủ.")
+		event.help("get", "Xác định GET Header.")
+		event.help("agent", "Xác định một tác nhân người dùng thay vì một tác nhân ngẫu nhiên.")
+		event.help_comment("|\n|-- Bài kiểm tra về áp lực:")
+		event.help("stress", "Bật chế độ kiểm tra mức độ căng thẳng.")
+		event.help("st wait", "Đặt thời gian giữa mỗi mức độ căng thẳng.")
+		event.help_comment("|\n|-- Nhiều:")
+		event.help("ips", "Đặt nhiều ips để nhắm mục tiêu.")
+		event.help("webs", "Đặt nhiều miền để nhắm mục tiêu.")
+		event.help("ports", "Tấn công nhiều cổng.")
+		event.help_comment("|\n|-- Tự động hóa:")
+		event.help("auto start", "Đặt thời gian trễ trước khi cuộc tấn công bắt đầu.")
+		event.help("auto step", "Đặt thời gian trễ giữa luồng tiếp theo để kích hoạt.")
+		event.help("auto stop", "Đặt thời gian trễ sau khi cuộc tấn công dừng lại.")
 
 	def banner(self):
 		system("clear || cls")
 		print(("""C_B----------------------------------------------------------C_W
-THE CREATOR DOES NOT TAKE ANY RESPONSIBILITY FOR DAMAGE CAUSED.
-THE USER ALONE IS RESPONSIBLE, BE IT: ABUSING RAVEN-STORM
-TO FIT ILLEGAL PURPOSES OR ACCIDENTAL DAMAGE CAUSED BY RAVEN-STORM.
-BY USING THIS SOFTWARE, YOU MUST AGREE TO TAKE FULL RESPONSIBILITY
-FOR ANY DAMAGE CAUSED BY RAVEN-STORM.
-EVERY ATTACK WILL CAUSE TEMPORARY DAMAGE, BUT LONG-TERM DAMAGE IS
-DEFFINITIFLY POSSIBLE.
-RAVEN-STORM SHOULD NOT SUGGEST PEOPLE TO PERFORM ILLEGAL ACTIVITIES.
+NGƯỜI SÁNG TẠO KHÔNG CHỊU BẤT CỨ TRÁCH NHIỆM NÀO VỀ THIỆT HẠI GÂY RA.
+NGƯỜI DÙNG CŨNG PHẢI CHỊU TRÁCH NHIỆM
+ĐỂ PHÙ HỢP VỚI CÁC MỤC ĐÍCH BẤT HỢP PHÁP HOẶC THIỆT HẠI TAI NẠN DO BÃO RAVEN gây ra.
+BẰNG CÁCH SỬ DỤNG PHẦN MỀM NÀY, BẠN PHẢI ĐỒNG Ý CHỊU TRÁCH NHIỆM ĐẦY ĐỦ
+ĐỐI VỚI BẤT KỲ THIỆT HẠI NÀO DO RAVEN-STORM gây ra.
+MỌI Đòn tấn công SẼ gây ra THIỆT HẠI TẠM THỜI NHƯNG THIỆT HẠI DÀI HẠN LÀ
+CÓ KHẢ NĂNG ĐÚNG CÁCH.
+RAVEN-STORM KHÔNG NÊN ĐỀ XUẤT NHỮNG NGƯỜI THỰC HIỆN CÁC HOẠT ĐỘNG BẤT HỢP PHÁP.
 C_B----------------------------------------------------------C_W""").replace("C_W", var.C_None).replace("C_B", var.C_Bold))
 		self.help()
 
 	def exit_console(self):
-		print("Have a nice day.")
+		print("Chúc một ngày tốt lành.")
 		quit()
 
 	def run_shell(self, command):
 		print("")
-		system(tools.arg("Enter shell command: ", ". ", command))
+		system(tools.arg("Nhập lệnh shell: ", ". ", command))
 		print("")
 
 	def debug(self, command):
 		print("")
-		eval(tools.arg("Enter debug command: ", "$ ", command))
+		eval(tools.arg("Nhập lệnh gỡ lỗi: ", "$ ", command))
 		print("")
 
 	@event.command
@@ -137,7 +137,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	@event.event
 	def on_command_not_found(command):
 		print("")
-		print("The command you entered does not exist.")
+		print("Lệnh bạn đã nhập không tồn tại.")
 		print("")
 
 	def check_session(self):
@@ -178,14 +178,14 @@ C_B----------------------------------------------------------C_W""").replace("C_
 			status = requests.post((var.server[2] + "set/com"), data={"password": var.server[3], "data": command}).text
 			if status != "200":
 				print("")
-				print("An error occured, while sending commands to the server.")
+				print("Đã xảy ra lỗi khi gửi lệnh tới máy chủ.")
 				print("")
 
 	@event.command
 	def debug():
 		var.l4_debug = True
 		print("")
-		print("Debugging mode enabled.")
+		print("Đã bật chế độ gỡ lỗi.")
 		print("")
 
 	def help(self):
@@ -199,7 +199,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		try:
 			var.port = [int(tools.arg("Port: ", "port ", command))]
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print("")
 
 	@event.command
@@ -208,7 +208,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		try:
 			var.threads = int(tools.arg("Threads: ", "threads ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print("")
 
 	@event.command
@@ -216,7 +216,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		print("")
 		var.ip = [tools.arg("Target: ", "ip ", command)]
 		if "." not in var.ip[0]:
-			print("This IP does not exist.")
+			print("IP này không tồn tại.")
 		print("")
 
 	@event.command
@@ -229,7 +229,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 			webtoiptxt = str(socket.gethostbyname(webtoip))
 			var.ip = [webtoiptxt]
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
@@ -237,19 +237,19 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		print("")
 		if var.socketmethod == "TCP":
 			var.socketmethod = "UDP"
-			print("Method changed to UDP.")
+			print("Đã thay đổi phương thức thành UDP.")
 		else:
 			var.socketmethod = "TCP"
-			print("Method changed to TCP.")
+			print("Đã thay đổi phương thức thành TCP.")
 		print("")
 
 	@event.command
 	def sleep(command):
 		print("")
 		try:
-			var.sleep = int(tools.arg("Delay in seconds: ", "sleep ", command))
+			var.sleep = int(tools.arg("Độ trễ trong vài giây: ", "sleep ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print("")
 
 	@event.command
