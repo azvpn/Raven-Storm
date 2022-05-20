@@ -2,7 +2,7 @@
 tên: Báo cáo lỗi
 về: Tạo báo cáo để giúp chúng tôi cải thiện
 Tiêu đề: Tên vấn đề
-phương pháp: L4, L3, ...
+phương pháp: L7, L4, L3, ...
 
 ---
 
