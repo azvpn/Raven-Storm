@@ -25,10 +25,28 @@ _Tôi đã lưu trữ kho lưu trữ này vì tôi hiện không muốn làm vi�
 - [x] Có các giao thức khác nhau như UDP / TCP, ICMP, HTTP, L2CAP, ARP và IEEE.
 
 ## Cài đặt
+**Cài bản tiếng việt**
+
+Cài đặt python trước sau đó tải xuống gói thư viện
+```
+pip3 install -r requirements.txt
+```
+Tải xuống kho lưu trữ Raven-Storm
+```
+git clone https://github.com/DauDau432/Raven-Storm
+```
+Di chuyển vào trong thư mục chính
+```
+cd Raven-Storm
+```
+Khởi động
+```
+python3 main.py
+```
+**Cài bản tiếng anh**
 
 Chỉ cần nhập dòng sau để cài đặt Raven-Storm trên Linux.
-
-```bash
+```
 curl -s https://raw.githubusercontent.com/DauDau432/Raven-Storm/master/install.sh | sudo bash -s
 ```
 
