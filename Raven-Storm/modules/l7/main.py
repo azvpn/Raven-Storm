@@ -228,7 +228,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 					response = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': choice(var.user_agents), "Connection": "keep-alive", "Accept-Encoding": "gzip, deflate", "Keep-Alive": randint(110,120)}), timeout=999)  # noqa
 					var.command_log.append("Sucessful execution.")
 				except Exception as ex:
-					print("Request failed.")
+					print("Yêu cầu không thành công.")
 					var.command_log.append("ERROR: %s" % ex)
 					if var.l7_debug:
 						print("ERROR: %s" % ex)
