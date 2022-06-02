@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 ```
 Tải xuống kho lưu trữ Raven-Storm
 ```
-git clone https://github.com/DauDau432/Raven-Storm
+git clone https://github.com/Nghi235/Raven-Storm
 ```
 Di chuyển vào trong thư mục chính
 ```
